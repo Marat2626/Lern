@@ -6,11 +6,11 @@ fun main() {
     var minute: Int = 7
 
     println("Год полета $year")
-    println("Вылет в " + String.format("%02d:%02d", hour, minute))
+    println("Вылет в  ${ String.format("%02d:%02d", hour, minute)}")
 // вывод с нулем посмотрел в интернете
     hour = 10
     minute  = 55
 
-    println("Прилет в " + String.format("%02d:%02d", hour, minute))
+    println("Прилет в  ${String.format("%02d:%02d", hour, minute)}")
 
 }
