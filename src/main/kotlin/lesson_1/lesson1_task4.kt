@@ -1,5 +1,6 @@
 package org.example.lesson_1
-fun main(){
+
+fun main() {
 
     val length: Long = 40_868_600_000
     val age: Byte = 27
@@ -8,11 +9,11 @@ fun main(){
     val partOfYear: Double = 2.0547945205479453E-4
     val apogee: Int = 327000
 
-    println(length)
-    println(age)
-    println(partOfDay)
-    println(seconds)
-    println(partOfYear)
-    println(apogee)
+    println("Расстояние $length")
+    println("Возраст $age")
+    println("Часть дня $partOfDay")
+    println("Секунды $seconds")
+    println("Часть года $partOfYear")
+    println("Апогей орбиты $apogee")
 
 }
