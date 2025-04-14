@@ -10,7 +10,6 @@ fun main() {
     println("Вылет в $hours:$minutes")
 
     hours = "10"
-    minutes  = "55"
-
-    println( "Прилет в $hours:$minutes")
+    minutes = "55"
+    println("Прилет в $hours:$minutes")
 }
