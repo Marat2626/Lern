@@ -6,9 +6,8 @@ fun main() {
     val pointMax = 3
     val pointMasha = 4
 
-    val averagePoint = (pointMasha + pointMax + pointLera + pointMarat) / NUMBER_OF_STUDENTS
-
+    val averagePoint = (pointMasha + pointMax + pointLera + pointMarat) / NUMBER_OF_STUDENTS.toDouble()
     println("Средний балл учеников $averagePoint")
 
 }
-const val NUMBER_OF_STUDENTS = 4.0
+const val NUMBER_OF_STUDENTS = 4
