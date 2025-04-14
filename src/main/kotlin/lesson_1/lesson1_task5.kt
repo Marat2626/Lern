@@ -10,11 +10,6 @@ fun main() {
 
     println("%02d:%02d:%02d".format( hours, minutes, seconds))
 }
+
 const val SECONDS_IN_MINUTE = 60
 const val SECONDS_IN_HOUR = 3600
-
-
-
-
-
-
