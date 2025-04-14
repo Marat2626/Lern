@@ -2,15 +2,15 @@ package lesson_1
 
 fun main() {
 
-    val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int = 7
+    val year: String = "1961"
+    var hours: String = "09"
+    var minutes: String = "07"
 
     println("Год полета $year")
-    println("Вылет в ${"%02d:%02d".format( hour, minute)}")
+    println("Вылет в $hours:$minutes")
 
-    hour = 10
-    minute  = 55
+    hours = "10"
+    minutes  = "55"
 
-    println("Прилет в ${"%02d:%02d".format( hour, minute)}")
+    println( "Прилет в $hours:$minutes")
 }
