@@ -10,7 +10,6 @@ fun main() {
 
     from = "D2"
     tol = "D3"
-    moveNumber = 2
 
-    println("$from:$tol ход $moveNumber")
+    println("$from:$tol ход ${moveNumber + 1}")
 }
