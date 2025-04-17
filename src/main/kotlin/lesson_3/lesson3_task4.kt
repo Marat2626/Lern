@@ -6,10 +6,10 @@ fun main() {
     var tol = "E4"
     var moveNumber = 1
 
-    println("$from:$tol ход $moveNumber")
+    println("[$from-$tol; $moveNumber]")
 
     from = "D2"
     tol = "D3"
 
-    println("$from:$tol ход ${moveNumber + 1}")
+    println("[$from-$tol; ${moveNumber + 1}]")
 }
