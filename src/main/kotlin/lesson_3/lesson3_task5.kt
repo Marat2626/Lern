@@ -2,14 +2,15 @@ package org.example.lesson_3
 
 fun main() {
 
-    val from = "D2"
-    val tol = "D4"
-    val moveNumber = 0
+    val moveString = "D2-D4;0"
 
-    println("$from:$tol,$moveNumber ход")
+    val parts = moveString.split("-", ";")
 
-    println("""
-         |$moveNumber ход сделан из кледки $from
-        |в кледку $tol 
-    """.trimMargin())
+    val from = parts[0]
+    val to = parts[1]
+    val moveNumber = parts[2].toInt()
+
+    println("Откуда: $from")
+    println("Куда: $to")
+    println("Номер хода: $moveNumber")
 }
