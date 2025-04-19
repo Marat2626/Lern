@@ -11,6 +11,4 @@ fun main() {
     }
 }
 
-
-
 const val yearNow = 2007
