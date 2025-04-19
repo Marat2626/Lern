@@ -10,4 +10,7 @@ fun main() {
         println("Доступ запрещен")
     }
 }
+
+
+
 const val yearNow = 2007
