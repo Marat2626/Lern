@@ -10,15 +10,13 @@ fun main() {
 
     if (input or inputTwo in 0..42){
 
-        if ((input == numberOne && inputTwo == numberTwo) || (input == numberTwo && inputTwo == numberOne)) {
-            println("выйграл")
-        }
-        else if (((input == numberOne || input == numberTwo) && (inputTwo !== numberTwo && inputTwo !== numberOne)) || ((input !== numberOne && input !== numberTwo) && (inputTwo == numberOne || inputTwo == numberTwo))){
-            println("утешиетльный")
-        }
-        else if ((input !== numberOne && input !== numberTwo) || (inputTwo !== numberOne && inputTwo !== numberTwo)) {
+        when {
+            ((input == numberOne && inputTwo == numberTwo) || (input == numberTwo && inputTwo == numberOne)) -> println("выйграл")
 
-            println("Не угадал")
+            (((input == numberOne || input == numberTwo) && (inputTwo !== numberTwo && inputTwo !== numberOne)) ||
+                    ((input !== numberOne && input !== numberTwo) && (inputTwo == numberOne || inputTwo == numberTwo))) -> println("утешиетльный")
+
+            ((input !== numberOne && input !== numberTwo) || (inputTwo !== numberOne && inputTwo !== numberTwo)) -> println("Не угадал")
         }
     }
     else {
